@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>ldu.edu.cn</groupId>
+    <artifactId>dubbo-sample</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <modules>
+        <module>dubbo</module>
+    </modules>
+
+    <properties>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+    <dependencies>
+        <!-- JUnit 测试框架，用于编写和运行单元测试 -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>3.8.1</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- Dubbo RPC 框架，用于构建高性能、高可用性的分布式服务 -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>dubbo</artifactId>
+            <version>2.6.6</version>
+        </dependency>
+
+        <!-- Apache ZooKeeper，用于维护配置信息、提供分布式同步和提供组服务 -->
+        <dependency>
+            <groupId>org.apache.zookeeper</groupId>
+            <artifactId>zookeeper</artifactId>
+            <version>3.4.10</version>
+        </dependency>
+
+        <!-- zkClient 是一个 ZooKeeper 的 Java 客户端库，用于简化 ZooKeeper 的使用 -->
+        <dependency>
+            <groupId>com.101tec</groupId>
+            <artifactId>zkclient</artifactId>
+            <version>0.5</version>
+        </dependency>
+
+        <!-- Netty 是一个高性能、异步事件驱动的网络应用框架，用于快速开发可维护的高性能协议服务器和客户端 -->
+        <dependency>
+            <groupId>io.netty</groupId>
+            <artifactId>netty-all</artifactId>
+            <version>4.1.32.Final</version>
+        </dependency>
+
+        <!-- Apache Curator 是一个 ZooKeeper 的 Java 客户端框架，用于简化 ZooKeeper 的使用 -->
+        <!--<dependency>-->
+        <!--    <groupId>org.apache.curator</groupId>-->
+        <!--    <artifactId>curator-framework</artifactId>-->
+        <!--    <version>2.8.0</version>-->
+        <!--</dependency>-->
+
+        <!-- Apache Curator Recipes 提供了基于 ZooKeeper 的各种高级功能，如领导选举、分布式锁等 -->
+        <dependency>
+            <groupId>org.apache.curator</groupId>
+            <artifactId>curator-recipes</artifactId>
+            <version>2.8.0</version>
+        </dependency>
+    </dependencies>
+
+
+</project>
