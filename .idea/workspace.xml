@@ -4,12 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6ca51f64-0bbd-4354-b652-c0b0fe0d5b33" name="Changes" comment="Api配置方式">
-      <change afterPath="$PROJECT_DIR$/dubbo-customer/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="6ca51f64-0bbd-4354-b652-c0b0fe0d5b33" name="Changes" comment="注解 实现服务提供方">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dubbo-customer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-customer/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dubbo-customer/src/main/java/ldu/edu/cn/customer/AppAnnotation.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-customer/src/main/java/ldu/edu/cn/customer/AppAnnotation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dubbo-customer/src/main/java/ldu/edu/cn/customer/configuation/ConsumerConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-customer/src/main/java/ldu/edu/cn/customer/configuation/ConsumerConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dubbo-customer/src/main/java/ldu/edu/cn/customer/service/ConsumerAnnotationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-customer/src/main/java/ldu/edu/cn/customer/service/ConsumerAnnotationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dubbo/src/main/java/ldu/edu/cn/provider/configuration/DubboConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo/src/main/java/ldu/edu/cn/provider/configuration/DubboConfiguration.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +72,7 @@
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.17",
-    "project.structure.side.proportion": "0.0",
+    "project.structure.side.proportion": "0.5747939",
     "settings.editor.selected.configurable": "preferences.fileTypes",
     "vue.rearranger.settings.migration": "true"
   }
@@ -89,20 +90,7 @@
       <recent name="ldu.edu.cn.provider.service" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.AppAnnotation">
-    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ldu.edu.cn.provider.App" />
-      <module name="dubbo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ldu.edu.cn.provider.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.ldu.edu.cn.customer.AppAnnotation">
     <configuration name="AppAnnotation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ldu.edu.cn.provider.AppAnnotation" />
       <module name="dubbo" />
@@ -121,7 +109,7 @@
       <module name="dubbo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ldu.edu.cn.customer.*" />
+          <option name="PATTERN" value="ldu.edu.cn.customer.configuation.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -134,7 +122,7 @@
       <module name="dubbo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ldu.edu.cn.customer.*" />
+          <option name="PATTERN" value="ldu.edu.cn.customer.configuation.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -155,13 +143,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ldu.edu.cn.customer.AppAnnotation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ldu.edu.cn.customer.AppAnnotation" />
+      <module name="dubbo-customer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ldu.edu.cn.customer.configuation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ldu.edu.cn.customer.AppAnnotation" />
         <item itemvalue="Application.AppAnnotation" />
         <item itemvalue="Application.CustomerApi" />
         <item itemvalue="Application.ProviderApi" />
         <item itemvalue="Application.CustomerApp" />
-        <item itemvalue="Application.App" />
       </list>
     </recent_temporary>
   </component>
@@ -239,7 +240,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718194198251</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="注解 实现服务提供方">
+      <option name="closed" value="true" />
+      <created>1718195227710</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1718195227710</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -291,6 +300,7 @@
     <MESSAGE value="消费方 xml" />
     <MESSAGE value="官方推荐 基于xml配置" />
     <MESSAGE value="Api配置方式" />
-    <option name="LAST_COMMIT_MESSAGE" value="Api配置方式" />
+    <MESSAGE value="注解 实现服务提供方" />
+    <option name="LAST_COMMIT_MESSAGE" value="注解 实现服务提供方" />
   </component>
 </project>

@@ -8,6 +8,9 @@ import com.alibaba.dubbo.config.spring.context.annotation.EnableDubbo;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+import java.util.HashMap;
+import java.util.Map;
+
 @Configuration
 @EnableDubbo(scanBasePackages = "ldu.edu.cn.provider.annotation")
 public class DubboConfiguration {
@@ -22,7 +25,11 @@ public class DubboConfiguration {
     public ApplicationConfig applicationConfig() {
         ApplicationConfig applicationConfig = new ApplicationConfig();
         applicationConfig.setName("dubbo-annotation-provider");
-        applicationConfig.setQosPort(55555);
+        Map<String, String> stringStringMap = new HashMap<String, String>();
+        stringStringMap.put("qos.enable","true");
+        stringStringMap.put("qos.accept.foreign.ip","false");
+        stringStringMap.put("qos.port","55555");
+        applicationConfig.setParameters(stringStringMap);
         return applicationConfig;
     }
 
