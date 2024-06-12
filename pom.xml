@@ -10,6 +10,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>dubbo</module>
+        <module>dubbo-customer</module>
     </modules>
 
 
